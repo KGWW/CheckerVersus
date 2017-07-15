@@ -1,6 +1,6 @@
 
 
-// 
+//
 // const sockets = io('localhost:3000');
 //
 // sockets.on('hello', (data) => {
@@ -12,9 +12,9 @@ $(function() {
 
     const socket = io(localhost:3000);
 
-    sockets.on('hello', (data) => {
+    socket.on('hello', (data) => {
         console.log(data);
-        sockets.emit('hi', { hi: 'you' })
+        socket.emit('hi', { hi: 'you' })
     });
 
     io.emit('connection');
